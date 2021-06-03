@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.pane{
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: rgb(22, 22, 22);
+    font-family: sans-serif;
+}
+.logo{
+    color: rgb(245, 245, 245);
+    text-transform: uppercase ;
+    letter-spacing:5px;
+    font-size: 22px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 10px;
+}
+.nav-links li a:hover, .nav-links li a:active {
+    font-size: 150%;
+    transition: transform 0.5 ease-in;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(245, 245, 245);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 768px){
+    .logo a h4{
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(22, 22, 22);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        z-index: 10;
+    } 
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+.logo{
+    height: 100%;
+    float: left;
+    display: table;
+}
+.logo h4{
+    color: rgb(231, 230, 230);
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 100;  
+}
+.logo a:link{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 70px;
+
+}
+.logo img{
+    position: relative;
+    margin-right: 1.5vh;
+    margin-bottom: -1.5vh;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+}
+.logo img:hover {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  } 
+
+.logo h4 span{
+    font-weight: 800;
+    
+}
+
+.mySlides{
+    -webkit-filter: grayscale(50%); 
+    filter: grayscale(50%);
+    z-index: 5;
+
+}
+
+
+body{
+    background-color: rgb(231, 230, 230);
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+
+   /* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .logo h4{
+        display: none !important;
+        visibility: hidden;
+    
+    }
+    .logo img{
+        left: 6.5vh;
+        width: 85px;
+
+    }
+}
+
+.buttom{
+    position: relative;
+    background-color: rgb(22, 22, 22);
+    z-index: 6;
+    min-height: 50vh;
+}
+
+.b-logo img{
+    position: relative;
+    width: 20%;
+    height: auto;
+    top: -10vh;
+    left: 45vh;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+}
+.b-logo img:hover {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  } 
+
+  .social{
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      width: 30%;
+      margin: 0;
+      margin-left: 32%;
+  }
+  .social .fab{
+      position: relative;
+      font-size: 30px;
+      color: rgb(204, 203, 203);
+      margin-top: -1%;
+      margin-left: 15%;
+    }
+
+    .social .fab:hover{
+        color: rgb(241, 238, 238);
+        transform: scale(1.2);
+    }
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+   .b-logo img{
+       left: 22vh;
+       top: -30px;
+
+   }
+   .buttom{
+       min-height: 30vh;
+   }
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 600px) {
+    .b-logo img{
+        left: 32vh;
+        top: -30px;
+ 
+    }
+    .buttom{
+        min-height: 30vh;
+    }
+ }
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+    .b-logo img{
+        left: 45vh;
+        top: -25px;
+ 
+    }
+    .buttom{
+        min-height: 30vh;
+    }
+ }  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    div .animate__animated{
+        top:  -16vh;
+        left: 35vh;
+        width: 42%;
+    }
+} 
+ 
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    div .animate__animated{
+        top:  -22.5vh;
+        left: 55vh;
+    }
+}
+   
+
+
+
+
+  

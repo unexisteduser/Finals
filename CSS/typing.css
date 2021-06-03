@@ -1,0 +1,81 @@
+.typo{
+    font-size: 60px;
+    display: flex;
+}
+
+.typing{
+    position: relative;
+    color: rgb(22, 22, 22);
+    margin-left: 1px;
+    margin-top: 15px;
+}
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -5px;
+    width: 1px;
+    height: 110%;
+    border-right: 2px solid rgb(22, 22, 22);
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .typo{
+        font-size: 20px;
+        margin-top: 120px;
+    }
+    .typo .line{
+        margin-top: 1.5vh;
+    }
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 600px) {
+    .typo{
+        font-size: 25px;
+        margin-top: 120px;
+    }
+    .typo .line{
+        margin-top: 1.5vh;
+    }
+    
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .typo{
+        font-size: 35px;
+        margin-top: 150px;
+
+    }
+}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    .typo{
+        font-size: 35px;
+        margin-top: 150px;
+
+    }
+} 
+ 
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .typo{
+        font-size: 65px;
+        margin-top: 150px;
+
+
+    }
+    .typo .line{
+        margin-top: 1vh;
+    }
+}

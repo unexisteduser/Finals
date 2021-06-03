@@ -1,0 +1,82 @@
+
+.paintViolet{
+    position: relative;
+    top: 1vh;    
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    margin: 0;
+    
+}
+@media screen and (min-width: 992px ){
+    .paintViolet{
+        top: 10vh;
+    }
+}
+
+@media screen and (min-width: 600px ){
+    .paintViolet{
+        top: -4vh;
+    }
+}
+
+@media screen and (min-width: 768px ){
+    .paintViolet{
+        top: -7vh;
+    }
+}
+
+@media screen and (max-width: 600px ){
+    .paintViolet{
+        top: -3vh;
+    }
+}
+div .animate__animated{
+    position: absolute;
+    width: 45%;
+    top: -40vh;
+    left: 5vh;
+    z-index: 6;
+}
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    div .animate__animated{
+        top: -1.5vh;
+        left: -2vh;
+    }
+}
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 600px) {
+    div .animate__animated{
+        top:  -4.5vh;
+        left: -5vh;
+    }
+}
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    div .animate__animated{
+        top:  -11.5vh;
+        left: -5vh;
+    }
+}
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    div .animate__animated{
+        top:  -16vh;
+        left: 35vh;
+        width: 42%;
+    }
+} 
+ 
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    div .animate__animated{
+        top:  -22.5vh;
+        left: 55vh;
+    }
+}
+
+
+

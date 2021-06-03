@@ -1,0 +1,32 @@
+
+.paintRed{
+    position: relative;
+    top: 20vh;    
+    width: 200%;
+    left: 0;
+    z-index: 4;
+    
+}
+@media screen and (min-width: 992px ){
+    .paintViolet{
+        top: 10vh;
+    }
+}
+
+@media screen and (min-width: 600px ){
+    .paintViolet{
+        top: -4vh;
+    }
+}
+
+@media screen and (min-width: 768px ){
+    .paintViolet{
+        top: -7vh;
+    }
+}
+
+@media screen and (max-width: 600px ){
+    .paintViolet{
+        top: -3vh;
+    }
+}
